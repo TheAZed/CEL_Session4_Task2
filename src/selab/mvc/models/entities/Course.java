@@ -11,6 +11,8 @@ public class Course implements Model {
     private String startTime = null;
     private String endTime = null;
     private Weekday weekday;
+    private String students;
+    private float average;
 
 
     @Override

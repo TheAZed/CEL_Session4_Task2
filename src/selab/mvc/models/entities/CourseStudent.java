@@ -24,6 +24,6 @@ public class CourseStudent implements Model {
 
     @Override
     public String getPrimaryKey() {
-        return courseNo + studentNo;
+        return courseNo + "S" + studentNo;
     }
 }

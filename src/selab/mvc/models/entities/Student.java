@@ -1,12 +1,16 @@
 package selab.mvc.models.entities;
 
+import selab.mvc.models.DataSet;
 import selab.mvc.models.Model;
 
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Student implements Model {
     private String name;
     private String studentNo;
+    private String courses;
+    private float average;
 
     @Override
     public String getPrimaryKey() {
@@ -26,12 +30,20 @@ public class Student implements Model {
 
     public float getAverage() {
         // TODO: Calculate and return the average of the points
-        return 0;
+        return average;
     }
 
     public String getCourses() {
         // TODO: Return a comma separated list of course names
-        return "-";
+        return courses;
+    }
+
+    public void setCourses(String courses) {
+        this.courses = courses;
+    }
+
+    public void setAverage(float average) {
+        this.average = average;
     }
 
     /**
