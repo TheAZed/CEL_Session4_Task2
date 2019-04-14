@@ -49,5 +49,5 @@ public abstract class Controller implements HttpHandler {
         return new JSONObject(new BufferedReader(new InputStreamReader(body)).lines().collect(Collectors.joining("\n")));
     }
 
-    public abstract View exec(String method, InputStream body) throws IOException;
+    public abstract View exec(String method, InputStream body) throws Exception;
 }
