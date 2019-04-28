@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="json-20180813-javadoc">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/java-json.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/json-20180813-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/java-json.jar!/" />
+    </SOURCES>
+  </library>
+</component>
