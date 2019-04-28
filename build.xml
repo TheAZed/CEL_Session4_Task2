@@ -1,0 +1,21 @@
+<?xml version ="1.0"?>
+<project name="MVC" default="make" basedir=".">
+    <target name="init">
+        <tstamp/>
+        <mkdir dir="build"/>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="src" destdir="build"/>
+    </target>
+
+    <target name="make" depends="compile">
+        <mkdir dir="output"/>
+        <jar jarfile="output/output-${DSTAMP}.jar" basedir="build"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="output"/>
+    </target>
+
+</project>
